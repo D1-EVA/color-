@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background:palevioletred;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.wrapper{
+  margin-top: 10%;
+}
+
+.wrapper h1{
+  font-family: 'Allura', cursive;
+  font-size: 120px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.team .team_member{
+  background: #fff;
+  margin: 5px;
+  margin-bottom: 50px;
+  width: 300px;
+  padding: 20px;
+  line-height: 20px;
+  color: #8e8b8b;  
+  position: relative;
+}
+
+
+.card-wrapper {
+display: flex;
+}
+
+.card {
+ width: 200px;
+ border: solid 1px #222;
+ margin: 16px;
+}
+
+.card-body { 
+  height: 100px;
+}
+  
+  .card-body p { 
+  text-align: center;
+}
+
+
+.card-footer {
+  background-color: blue;
+  display: flex;
+  height: 50px;
+  color: white;
+  }
+  
+  
+ .card-footer span{ 
+  margin: auto;
+  max-width: 80%;
+  display: inline-block;
+  text-align: center;
+  }
+.team .team_member .team_img{
+  position:relative;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  background: #fff;
+}
+
+.team .team_member .team_img img{
+  width: 100px;
+  height: 100px;
+  padding: 10px ;
+}
