@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Our Team Section</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour</title>
+    <link rel="stylesheet" href="colour.css">
 </head>
 <body>
-
-<div class="wrapper">
-  <h1>Guess the Color!</h1>
-  <div class="team">
-    <div class="team_member">
-      <div class="team_img">
-          <label for="Color">
+    <div class="wrapper">
+        <h1>GUESS THE COLOUR</h1>
+        <div class="row">
+            <div class="column">
+                 <label for="Color">
             
            <a href="javascript: changeText(1);" id="p_1">
-               <img src="yellow.png" alt="Team_image"></a><input type="text" id="name" name="name" required
+               <img src="black.png" alt="black" style="width:100%"></a><input type="text" id="name" name="name" required
        minlength="4" maxlength="8" size="10"></label>
-          <div id="div"></div>
-      </div>
-      
-    </div>
-    <div class="team_member">
-      <div class="team_img">
-          <label for="Color">
+                <div id="div"></div>
+            </div>
+            <div class="column">
+                <label for="Color">
            <a href="javascript: changeText(2);" id="p_2">
-               <img src="blue.png" alt="Team_image"></a><input type="text" id="name" name="name" required
+              <img src="blue.png" alt="blue" style="width:100%"></a><input type="text" id="name" name="name" required
        minlength="4" maxlength="8" size="10"></label>
-          <div id="div"></div>
-      </div>
-      </div>
-    <div class="team_member">
-      <div class="team_img">
-          <label for="Color">
+                <div id="div"></div>
+            </div>
+            <div class="column">
+                <label for="Color">
            <a href="javascript: changeText(3);" id="p_3">
-               <img src="red.png" alt="Team_image"></a><input type="text" id="name" name="name" required
+              <img src="yellow.png" alt="yellow" style="width:100%"></a><input type="text" id="name" name="name" required
        minlength="4" maxlength="8" size="10"></label>
-          <div id="div"></div>
-      </div>
-      
-    </div>
-    <div class="team_member">
-        <div class="team_img">
-            <label for="Color">
+                <div id="div"></div>
+            </div>
+          </div>
+          <div class="row1">
+            <div class="column1">
+                 <label for="Color">
              <a href="javascript: changeText(4);" id="p_4">
-                 <img src="green.png" alt="Team_image"></a><input type="text" id="name" name="name" required
+              <img src="green.png" alt="green" style="width:100%"></a><input type="text" id="name" name="name" required
        minlength="4" maxlength="8" size="10"></label>
-            <div id="div"></div>
-        </div>
-        
-      </div>
-       <div class="team_member">
-        
-      </div>
-  </div>
-</div>
+                <div id="div"></div>
+            </div>
+            <div class="column1">
+                <label for="Color">
+             <a href="javascript: changeText(5);" id="p_5">
+              <img src="red.png" alt="red" style="width:100%"></a><input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10"></label>
+                <div id="div"></div>
+            </div>
+            <div class="column1">
+                 <label for="Color">
+               <a href="javascript: changeText(6);" id="p_6">
+              <img src="white.png" alt="white" style="width:100%"></a><input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10"></label>
+                <div id="div"></div>
+            </div>
+          </div>
+    </div>
     
-
     <script>
 function changeText(value) {
     var div = document.getElementById("div");
     var text = "";
 
-    if (value == 1) text += "yellow" ;
+    if (value == 1) text += "black" ;
     if (value == 2) text += "blue" ;
-    if (value == 3) text += "red" ;
+    if (value == 3) text += "yellow" ;
     if (value == 4) text += "green";
+    if (value == 5) text += "red";
+    if (value == 6) text += "white";
+    
     
     
 
 
     div.innerHTML = text;
 }
+        
+function myFunction() {
+  document.getElementById("myDiv").style.padding = "50px 10px 20px 30px";
+}
+        
 </script>
 </body>
 </html>
