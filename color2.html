@@ -23,23 +23,29 @@
     </div>
     <div class="team_member">
       <div class="team_img">
+          <label for="Color">
            <a href="javascript: changeText(2);" id="p_2">
-               <img src="blue.png" alt="Team_image"></a>
+               <img src="blue.png" alt="Team_image"></a><input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10"></label>
           <div id="div"></div>
       </div>
       </div>
     <div class="team_member">
       <div class="team_img">
+          <label for="Color">
            <a href="javascript: changeText(3);" id="p_3">
-               <img src="red.png" alt="Team_image"></a>
+               <img src="red.png" alt="Team_image"></a><input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10"></label>
           <div id="div"></div>
       </div>
       
     </div>
     <div class="team_member">
         <div class="team_img">
+            <label for="Color">
              <a href="javascript: changeText(4);" id="p_4">
-                 <img src="green.png" alt="Team_image"></a>
+                 <img src="green.png" alt="Team_image"></a><input type="text" id="name" name="name" required
+       minlength="4" maxlength="8" size="10"></label>
             <div id="div"></div>
         </div>
         
@@ -56,11 +62,11 @@ function changeText(value) {
     var div = document.getElementById("div");
     var text = "";
 
-    if (value == 1) text += "this is one" ;
-    if (value == 2) text += "this is two" ;
-    if (value == 3) text += "this is three" ;
-    if (value == 4) text += "this is four";
-    if (value == 5) text += "this is five" ;
+    if (value == 1) text += "yellow" ;
+    if (value == 2) text += "blue" ;
+    if (value == 3) text += "red" ;
+    if (value == 4) text += "green";
+    
     
 
 
